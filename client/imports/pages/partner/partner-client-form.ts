@@ -1,11 +1,12 @@
 import { MeteorObservable }  from 'meteor-rxjs';
-import { Component }         from '@angular/core';
+import { Component, Inject }         from '@angular/core';
 import { PaginationService } from 'ng2-pagination';
 
 import { Client, CLIENT_SELECTOR } from 'both/models';
 import { Clients }                 from 'both/collections';
 
 import { ListForm } from '..';
+
 
 @Component({
   selector: 'partner-client-form',
@@ -14,7 +15,7 @@ import { ListForm } from '..';
 export class PartnerClientForm extends ListForm {
 
   constructor(
-    protected paginationService: PaginationService
+    @Inject(PaginationService) protected paginationService: PaginationService
   ) {
     super(
       paginationService,

@@ -1,4 +1,4 @@
-import { Component }         from '@angular/core';
+import { Component, Inject }         from '@angular/core';
 import { Router }            from '@angular/router';
 import { PaginationService } from 'ng2-pagination';
 
@@ -15,7 +15,7 @@ export class PartnerTokenForm extends ListForm {
 
   constructor(
     readonly router: Router,
-    protected paginationService: PaginationService
+    @Inject(PaginationService) protected paginationService: PaginationService
   ) {
     super(
       paginationService,

@@ -1,4 +1,4 @@
-import { Component }         from '@angular/core';
+import { Component, Inject }         from '@angular/core';
 import { PaginationService } from 'ng2-pagination';
 
 import { Offer }  from 'both/models';
@@ -13,7 +13,7 @@ import { ListForm } from '..';
 export class PartnerOfferForm extends ListForm {
 
   constructor(
-    protected paginationService: PaginationService
+    @Inject(PaginationService) protected paginationService: PaginationService
   ) {
     super(
       paginationService,
