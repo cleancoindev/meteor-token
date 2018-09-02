@@ -41,11 +41,12 @@ export class ListForm implements OnInit, OnDestroy {
     protected paginationService: PaginationService,
     protected Collection: MongoObservable.Collection<Item>,
     protected subscription: string,
-    protected SELECTOR: Mongo.Selector = {},
+    protected SELECTOR: Mongo.Selector,
     protected order: Mongo.SortSpecifier
   ) {}
 
   ngOnInit() {
+
     this.paginationService.register({
       id: this.subscription,
       itemsPerPage: this.size,

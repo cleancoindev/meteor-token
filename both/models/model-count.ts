@@ -5,6 +5,6 @@ export interface Count {
 }
 
 export const COUNT_PUBLIC = {
-  collection: 1,
+  subscription: 1,
   count: 1
 };
