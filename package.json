@@ -34,7 +34,7 @@
     "ngx-mask": "^6.1.2",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.2.2",
-    "rxjs-compat": "^6.2.2",
+    "rxjs-compat": "^6.6.7",
     "underscore": "^1.9.1",
     "zone.js": "^0.8.26"
   },
