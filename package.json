@@ -30,7 +30,7 @@
     "lodash": "^4.17.10",
     "meteor-node-stubs": "^0.4.1",
     "meteor-rxjs": "^0.4.14",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "ngx-mask": "^6.1.2",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.2.2",
